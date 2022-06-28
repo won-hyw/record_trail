@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleRecordFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/left_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="〈 "
+                    android:textSize="100px"
+                    android:textColor="#A1A1A1"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="19dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="60px"
+                    android:textAlignment="center"/>
+                <Button
+                    android:id="@+id/right_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="〉"
+                    android:textSize="100px"
+                    android:textColor="#A1A1A1"
+                    android:background="@android:color/transparent"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘의 목표"
+                android:textSize="40px"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/today_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="없음"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/circle"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="90dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/step"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="120px"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 걸음"
+                        android:textSize="100px"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/record_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_button_shape"
+                    android:textAlignment="center"
+                    android:paddingTop="25px"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="활동 시간"
+                    android:textStyle="bold"/>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/barchart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/top_edge"
+            >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

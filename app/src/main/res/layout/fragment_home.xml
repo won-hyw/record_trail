@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:background="@drawable/square_green_left_bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/circle_white" />
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/bubble_grey"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="반가워요! 회원님❤"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:text="오늘도 같이 산책하러 가요~"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_step"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:text="걸음"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_m"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:text="m"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_kcal"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:text="kcal"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/recco_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00ff0000"
+                    android:gravity="center"
+                    android:text="산책로 추천 받기"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="회원님 "
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="어제보다 "
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/before"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="걸음"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="을 더 걸었어요!"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="목표 걸음 수까지 앞으로 "
+                    android:textStyle="normal"/>
+
+                <TextView
+                    android:id="@+id/tv_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="@color/lime" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:text="오늘은 공원을 산책해볼까요?"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <!-- 이미지 자동 스크롤 -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlide"
+                android:layout_width="match_parent"
+                android:layout_height="270dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sqaure_black"
+    android:alpha="0.5">
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@drawable/square_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/greyBtn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sqaure_grey"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="344dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="아니요"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/greenBtn"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/square_green_4radius"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="344dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="33dp"
+            android:gravity="center"
+            android:text="예"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_popup"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="목적지에 도착하셨습니다. 후기를 남기시겠습니까?"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

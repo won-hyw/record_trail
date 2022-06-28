@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".WriteReviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 뒤로가기(임시) -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- 저장버튼 -->
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_round"
+            android:fontFamily="@font/leferibaseregular"
+            android:text="저장"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Image_map"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#C4C4C4" />
+
+    <EditText
+        android:id="@+id/et_review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="180dp"
+        android:background="@null"
+        android:fontFamily="@font/leferibaseregular"
+        android:gravity="top"
+        android:hint="회원님 첫 번째 산책로는 어떠셨나요?
+        산책로에 대한 후기를 남겨주세요."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/UploadIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:adjustViewBounds="true"
+            android:padding="0sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/camera" />
+    </LinearLayout>
+
+
+</LinearLayout>

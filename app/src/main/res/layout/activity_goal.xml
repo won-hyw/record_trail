@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/light_gray"
+    tools:context=".GoalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/leferibasebold"
+            android:text="목표 설정"
+            android:textAlignment="center"
+            android:textColor="@color/dark_gray"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원님에게 맞는 목표를 설정해보세요!"
+        android:textColor="@color/dark_gray"
+        android:textSize="18dp"
+        android:fontFamily="@font/leferipointwhite"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/dark_gray"
+                android:text="걸음"
+                android:fontFamily="@font/leferipointwhite"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/set_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_round"
+            android:textColor="@color/white"
+            android:fontFamily="@font/leferibaseregular"
+            android:text="설정하기"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
