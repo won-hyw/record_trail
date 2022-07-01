@@ -1,5 +1,4 @@
-# record_trail
-2022ITSHOW : 레코드 트레일
+# 2022ITSHOW : 레코드 트레일
 
 - Android 개발 환경에서 Java를 사용하여 개발
 - 전국길관광정보표준데이터 Open API를 이용하여 데이터를 파싱하여 지도와 연결
